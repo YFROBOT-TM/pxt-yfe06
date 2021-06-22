@@ -662,7 +662,7 @@ namespace YFE06 {
      * @param pin IR receiver pin. eg: DigitalPin.P2
      * @param protocol IR protocol. eg: YFE06.IrProtocol.NEC
      */
-    //% subcategory="IR Receiver"
+    //% subcategory="IR_Receiver"
     //% blockId="YFE06_infrared_connect_receiver"
     //% block="connect IR receiver at pin %pin and decode %protocol"
     //% pin.fieldEditor="gridpicker"
@@ -744,7 +744,7 @@ namespace YFE06 {
      * @param action the trigger action
      * @param handler body code to run when event is raised
      */
-    //% subcategory="IR Receiver"
+    //% subcategory="IR_Receiver"
     //% blockId=YFE06_infrared_on_ir_button
     //% block="on IR button | %button | %action"
     //% button.fieldEditor="gridpicker"
@@ -767,7 +767,7 @@ namespace YFE06 {
     /**
      * Returns the code of the IR button that was pressed last. Returns -1 (IrButton.Any) if no button has been pressed yet.
      */
-    //% subcategory="IR Receiver"
+    //% subcategory="IR_Receiver"
     //% blockId=YFE06_infrared_ir_button_pressed
     //% block="IR button"
     //% weight=10
@@ -781,7 +781,7 @@ namespace YFE06 {
     /**
      * Returns true if any button was pressed since the last call of this function. False otherwise.
      */
-    //% subcategory="IR Receiver"
+    //% subcategory="IR_Receiver"
     //% blockId=YFE06_infrared_was_any_button_pressed
     //% block="any IR button was pressed"
     //% weight=7
@@ -801,7 +801,7 @@ namespace YFE06 {
      * Returns the command code of a specific IR button.
      * @param button the button
      */
-    //% subcategory="IR Receiver"
+    //% subcategory="IR_Receiver"
     //% blockId=YFE06_infrared_button_code
     //% button.fieldEditor="gridpicker"
     //% button.fieldOptions.columns=3

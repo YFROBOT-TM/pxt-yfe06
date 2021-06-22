@@ -70,5 +70,5 @@
   "YFE06|block": "YFE06",
   "{id:category}YFE06": "YFE06",
   "{id:subcategory}DigitalTube": "數碼管顯示",
-  "{id:subcategory}IR Receiver": "紅外遙控"
+  "{id:subcategory}IR_Receiver": "紅外遙控"
 }
