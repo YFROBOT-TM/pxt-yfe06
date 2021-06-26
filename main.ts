@@ -215,38 +215,11 @@ namespace YFE06 {
      */
     //% weight=60
     //% blockId=YFE06_readCollisionSwitch
-    //% block="Read Collision Switch on %pin"
+    //% block="Read Collision Switch on %pincs"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
     export function readCollisionSwitch(pincs: DigitalPin): number {
         return pins.digitalReadPin(pincs)
     }
-
-    // /**
-    //  * Read X-axis of the Rocker.
-    //  * @param pinx the X-axis pin. eg: AnalogPin.P1
-    //  * @returns the X-axis Value.
-    //  */
-    // //% weight=55
-    // //% blockId=YFE06_readXRocker
-    // //% block="Read Rocker X-axis on %pin"
-    // //% pinx.fieldEditor="gridpicker" pinx.fieldOptions.columns=4 
-    // export function readXRocker(pinx: AnalogPin): number {
-    //     return pins.analogReadPin(pinx)
-    // }
-
-    // /**
-    //  * Read Y-axis of the Rocker.
-    //  * @param piny the Y-axis pin. eg: AnalogPin.P2
-    //  * @returns the Y-axis Value.
-    //  */
-    // //% weight=54
-    // //% blockId=YFE06_readYRocker
-    // //% block="Read Rocker Y-axis on %pin"
-    // //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
-    // export function readYRocker(piny: AnalogPin): number {
-    //     return pins.analogReadPin(piny)
-    // }
-
     
     /**
      * Read Potentiometer.
@@ -255,7 +228,7 @@ namespace YFE06 {
      */
     //% weight=53
     //% blockId=YFE06_readPotentiometer
-    //% block="Read Potentiometer on %pin"
+    //% block="Read Potentiometer on %pinpt"
     //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
     export function readPotentiometer(pinpt: AnalogPin): number {
         return pins.analogReadPin(pinpt)
@@ -268,7 +241,7 @@ namespace YFE06 {
      */
     //% weight=60
     //% blockId=YFE06_readInfraredSensor
-    //% block="Read Infrared Sensor on %pin"
+    //% block="Read Infrared Sensor on %pinir"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
     export function readInfraredSensor(pinir: DigitalPin): number {
         return pins.digitalReadPin(pinir)

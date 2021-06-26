@@ -30,6 +30,7 @@
   "YFE06.readXRocker": "讀取搖桿的X軸。",
   "YFE06.readYRocker": "讀取搖桿的Y軸。",
   "YFE06.readPotentiometer": "讀取電位器。",
+  "YFE06.readInfraredSensor": "讀取紅外感應器。",
   "YFE06.ping": "發送ping並獲得迴聲時間結果（以微秒為單位）",
   "YFE06.ping|param|echo": "echo引腳",
   "YFE06.ping|param|maxCmDistance": "最大距離單位cm(默認500)",
