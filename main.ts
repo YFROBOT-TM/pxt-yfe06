@@ -17,7 +17,7 @@ let YFE06Motor1A = AnalogPin.P14
 let YFE06Motor2D = DigitalPin.P15
 let YFE06Motor2A = AnalogPin.P16
 
-//% color="#5698c3" weight=10 icon="\uf12e"
+//% color="#45b787" weight=10 icon="\uf12e"
 namespace YFE06 {
 
     /////////////////////// IR ///////////////////////
