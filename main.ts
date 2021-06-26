@@ -241,8 +241,8 @@ namespace YFE06 {
     //% speed.min=0 speed.max=255
     //% advanced=true
     export function turnLeft(speed: number): void {
-        motorRun(Motors.M1, 0, speed);
-        motorRun(Motors.M2, 0, 0);
+        motorRun(Motors.M1, 0, 0);
+        motorRun(Motors.M2, 0, speed);
     }
 
     /**
@@ -254,8 +254,8 @@ namespace YFE06 {
     //% speed.min=0 speed.max=255
     //% advanced=true
     export function turnRight(speed: number): void {
-        motorRun(Motors.M1, 0, 0);
-        motorRun(Motors.M2, 0, speed);
+        motorRun(Motors.M1, 0, speed);
+        motorRun(Motors.M2, 0, 0);
     }
 
     /**
