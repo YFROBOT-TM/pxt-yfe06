@@ -260,15 +260,15 @@ namespace YFE06 {
 
     /**
      * Read the Collision Switch.
-     * @param pin collision Switch pin. eg: DigitalPin.P8
+     * @param pincs collision Switch pin. eg: DigitalPin.P8
      * @returns the Collision Switch Value.
      */
     //% weight=60
     //% blockId=YFE06_readCollisionSwitch
     //% block="Read Collision Switch on %pin"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
-    export function readCollisionSwitch(pin: DigitalPin): number {
-        return pins.digitalReadPin(pin)
+    export function readCollisionSwitch(pincs: DigitalPin): number {
+        return pins.digitalReadPin(pincs)
     }
 
     /**
@@ -335,6 +335,19 @@ namespace YFE06 {
     //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
     export function readPotentiometer(pinpt: AnalogPin): number {
         return pins.analogReadPin(pinpt)
+    }
+
+    /**
+     * Read the Infrared Sensor.
+     * @param pinir Infrared Sensor pin. eg: DigitalPin.P8
+     * @returns the Infrared Sensor Value.
+     */
+    //% weight=60
+    //% blockId=YFE06_readInfraredSensor
+    //% block="Read Infrared Sensor on %pin"
+    //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
+    export function readInfraredSensor(pinir: DigitalPin): number {
+        return pins.digitalReadPin(pinir)
     }
 
     /**
