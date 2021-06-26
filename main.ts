@@ -207,56 +207,6 @@ namespace YFE06 {
     export function motorStop(motor: Motors): void {
         motorRun(motor, 0, 0);
     }
-    
-    // /**
-    //  * Move forward with speed.
-    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
-    //  */
-    // //% weight=70
-    // //% blockId=YFE06_forward block="move forward with speed %speed"
-    // //% speed.min=0 speed.max=255
-    // //% advanced=true
-    // export function forward(speed: number): void {
-    //     motorRun(Motors.MAll, 0, speed);
-    // }
-
-    // /**
-    //  * Move back with speed.
-    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
-    //  */
-    // //% weight=69
-    // //% blockId=YFE06_back block="move back with speed %speed"
-    // //% speed.min=0 speed.max=255
-    // //% advanced=true
-    // export function back(speed: number): void {
-    //     motorRun(Motors.MAll, 1, speed);
-    // }
-
-    // /**
-    //  * Turn left with speed.
-    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
-    //  */
-    // //% weight=65
-    // //% blockId=YFE06_turnLeft block="turn left with speed %speed"
-    // //% speed.min=0 speed.max=255
-    // //% advanced=true
-    // export function turnLeft(speed: number): void {
-    //     motorRun(Motors.M1, 0, 0);
-    //     motorRun(Motors.M2, 0, speed);
-    // }
-
-    // /**
-    //  * Turn right with speed.
-    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
-    //  */
-    // //% weight=64
-    // //% blockId=YFE06_turnRight block="turn right with speed %speed"
-    // //% speed.min=0 speed.max=255
-    // //% advanced=true
-    // export function turnRight(speed: number): void {
-    //     motorRun(Motors.M1, 0, speed);
-    //     motorRun(Motors.M2, 0, 0);
-    // }
 
     /**
      * Read the Collision Switch.
@@ -269,32 +219,6 @@ namespace YFE06 {
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
     export function readCollisionSwitch(pincs: DigitalPin): number {
         return pins.digitalReadPin(pincs)
-    }
-
-    /**
-     * Read the Left Patrol Sensor.
-     * @param pinl the Left Patrol Sensor pin. eg: DigitalPin.P2
-     * @returns the Left Patrol Sensor Value.
-     */
-    //% weight=59
-    //% blockId=YFE06_readLeftPatrolSensor
-    //% block="Read Left Patrol Sensor on %pin"
-    //% pinl.fieldEditor="gridpicker" pinl.fieldOptions.columns=4 
-    export function readLeftPatrolSensor(pinl: DigitalPin): number {
-        return pins.digitalReadPin(pinl)
-    }
-
-    /**
-     * Read the Right Patrol Sensor.
-     * @param pinr the Right Patrol Sensor pin. eg: DigitalPin.P8
-     * @returns the Right Patrol Sensor Value.
-     */
-    //% weight=58
-    //% blockId=YFE06_readRightPatrolSensor
-    //% block="Read Right Patrol Sensor on %pin"
-    //% pinr.fieldEditor="gridpicker" pinr.fieldOptions.columns=4 
-    export function readRightPatrolSensor(pinr: DigitalPin): number {
-        return pins.digitalReadPin(pinr)
     }
 
     // /**
