@@ -29,6 +29,7 @@
   "YFE06.readRightPatrolSensor": "读取右巡线传感器。",
   "YFE06.readXRocker": "读取摇杆的X轴。",
   "YFE06.readYRocker": "读取摇杆的Y轴。",
+  "YFE06.readPotentiometer": "读取电位器。",
   "YFE06.ping": "发送ping并获得回声时间结果（以微秒为单位）",
   "YFE06.ping|param|echo": "echo引脚",
   "YFE06.ping|param|maxCmDistance": "最大距离单位cm(默认500)",

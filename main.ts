@@ -297,30 +297,44 @@ namespace YFE06 {
         return pins.digitalReadPin(pinr)
     }
 
-    /**
-     * Read X-axis of the Rocker.
-     * @param pinx the X-axis pin. eg: AnalogPin.P1
-     * @returns the X-axis Value.
-     */
-    //% weight=55
-    //% blockId=YFE06_readXRocker
-    //% block="Read Rocker X-axis on %pin"
-    //% pinx.fieldEditor="gridpicker" pinx.fieldOptions.columns=4 
-    export function readXRocker(pinx: AnalogPin): number {
-        return pins.analogReadPin(pinx)
-    }
+    // /**
+    //  * Read X-axis of the Rocker.
+    //  * @param pinx the X-axis pin. eg: AnalogPin.P1
+    //  * @returns the X-axis Value.
+    //  */
+    // //% weight=55
+    // //% blockId=YFE06_readXRocker
+    // //% block="Read Rocker X-axis on %pin"
+    // //% pinx.fieldEditor="gridpicker" pinx.fieldOptions.columns=4 
+    // export function readXRocker(pinx: AnalogPin): number {
+    //     return pins.analogReadPin(pinx)
+    // }
 
+    // /**
+    //  * Read Y-axis of the Rocker.
+    //  * @param piny the Y-axis pin. eg: AnalogPin.P2
+    //  * @returns the Y-axis Value.
+    //  */
+    // //% weight=54
+    // //% blockId=YFE06_readYRocker
+    // //% block="Read Rocker Y-axis on %pin"
+    // //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
+    // export function readYRocker(piny: AnalogPin): number {
+    //     return pins.analogReadPin(piny)
+    // }
+
+    
     /**
-     * Read Y-axis of the Rocker.
-     * @param piny the Y-axis pin. eg: AnalogPin.P2
-     * @returns the Y-axis Value.
+     * Read Potentiometer.
+     * @param pinpt the Potentiometer pin. eg: AnalogPin.P2
+     * @returns the Potentiometer Value.
      */
-    //% weight=54
-    //% blockId=YFE06_readYRocker
-    //% block="Read Rocker Y-axis on %pin"
+    //% weight=53
+    //% blockId=YFE06_readPotentiometer
+    //% block="Read Potentiometer on %pin"
     //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
-    export function readYRocker(piny: AnalogPin): number {
-        return pins.analogReadPin(piny)
+    export function readPotentiometer(pinpt: AnalogPin): number {
+        return pins.analogReadPin(pinpt)
     }
 
     /**

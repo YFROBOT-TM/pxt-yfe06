@@ -54,6 +54,7 @@
   "YFE06.readRightPatrolSensor|block": "讀取引腳%pin上的右巡線傳感器",
   "YFE06.readXRocker|block": "讀取引腳%pin上的搖桿X軸",
   "YFE06.readYRocker|block": "讀取引腳%pin上的搖桿Y軸",
+  "YFE06.readPotentiometer|block": "讀取引腳%pin上的電位器",
   "YFE06.ping|block": "超聲波trig|%trig|echo|%echo|單位|%unit",
   "YFE06.PingUnit.Centimeters|block": "cm",
   "YFE06.PingUnit.Inches|block": "inches",
