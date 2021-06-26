@@ -208,55 +208,55 @@ namespace YFE06 {
         motorRun(motor, 0, 0);
     }
     
-    /**
-     * Move forward with speed.
-     * @param speed the speed from 0 (min) to 255 (max), eg:128
-     */
-    //% weight=70
-    //% blockId=YFE06_forward block="move forward with speed %speed"
-    //% speed.min=0 speed.max=255
-    //% advanced=true
-    export function forward(speed: number): void {
-        motorRun(Motors.MAll, 0, speed);
-    }
+    // /**
+    //  * Move forward with speed.
+    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
+    //  */
+    // //% weight=70
+    // //% blockId=YFE06_forward block="move forward with speed %speed"
+    // //% speed.min=0 speed.max=255
+    // //% advanced=true
+    // export function forward(speed: number): void {
+    //     motorRun(Motors.MAll, 0, speed);
+    // }
 
-    /**
-     * Move back with speed.
-     * @param speed the speed from 0 (min) to 255 (max), eg:128
-     */
-    //% weight=69
-    //% blockId=YFE06_back block="move back with speed %speed"
-    //% speed.min=0 speed.max=255
-    //% advanced=true
-    export function back(speed: number): void {
-        motorRun(Motors.MAll, 1, speed);
-    }
+    // /**
+    //  * Move back with speed.
+    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
+    //  */
+    // //% weight=69
+    // //% blockId=YFE06_back block="move back with speed %speed"
+    // //% speed.min=0 speed.max=255
+    // //% advanced=true
+    // export function back(speed: number): void {
+    //     motorRun(Motors.MAll, 1, speed);
+    // }
 
-    /**
-     * Turn left with speed.
-     * @param speed the speed from 0 (min) to 255 (max), eg:128
-     */
-    //% weight=65
-    //% blockId=YFE06_turnLeft block="turn left with speed %speed"
-    //% speed.min=0 speed.max=255
-    //% advanced=true
-    export function turnLeft(speed: number): void {
-        motorRun(Motors.M1, 0, 0);
-        motorRun(Motors.M2, 0, speed);
-    }
+    // /**
+    //  * Turn left with speed.
+    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
+    //  */
+    // //% weight=65
+    // //% blockId=YFE06_turnLeft block="turn left with speed %speed"
+    // //% speed.min=0 speed.max=255
+    // //% advanced=true
+    // export function turnLeft(speed: number): void {
+    //     motorRun(Motors.M1, 0, 0);
+    //     motorRun(Motors.M2, 0, speed);
+    // }
 
-    /**
-     * Turn right with speed.
-     * @param speed the speed from 0 (min) to 255 (max), eg:128
-     */
-    //% weight=64
-    //% blockId=YFE06_turnRight block="turn right with speed %speed"
-    //% speed.min=0 speed.max=255
-    //% advanced=true
-    export function turnRight(speed: number): void {
-        motorRun(Motors.M1, 0, speed);
-        motorRun(Motors.M2, 0, 0);
-    }
+    // /**
+    //  * Turn right with speed.
+    //  * @param speed the speed from 0 (min) to 255 (max), eg:128
+    //  */
+    // //% weight=64
+    // //% blockId=YFE06_turnRight block="turn right with speed %speed"
+    // //% speed.min=0 speed.max=255
+    // //% advanced=true
+    // export function turnRight(speed: number): void {
+    //     motorRun(Motors.M1, 0, speed);
+    //     motorRun(Motors.M2, 0, 0);
+    // }
 
     /**
      * Read the Collision Switch.
