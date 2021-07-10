@@ -225,13 +225,13 @@ namespace YFE06 {
     }
     
     /**
-     * Read Potentiometer.
+     * Return the value of the Potentiometer.
      * @param pinpt the Potentiometer pin. eg: AnalogPin.P2
      * @returns the Potentiometer Value.
      */
     //% weight=53
     //% blockId=YFE06_readPotentiometer
-    //% block="Read Potentiometer on %pinpt"
+    //% block="value of Potentiometer at %pinpt"
     //% piny.fieldEditor="gridpicker" piny.fieldOptions.columns=4 
     export function readPotentiometer(pinpt: AnalogPin): number {
         return pins.analogReadPin(pinpt)
