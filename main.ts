@@ -238,16 +238,19 @@ namespace YFE06 {
     }
 
     /**
-     * Read the Infrared Sensor.
+     * Checks whether the Infrared Sensor detects an obstacle.
      * @param pinir Infrared Sensor pin. eg: DigitalPin.P8
      * @returns the Infrared Sensor Value.
      */
     //% weight=60
     //% blockId=YFE06_readInfraredSensor
-    //% block="Read Infrared Sensor on %pinir"
+    //% block="Infrared Sensor at %pinir detects an obstacle"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
-    export function readInfraredSensor(pinir: DigitalPin): number {
-        return pins.digitalReadPin(pinir)
+    export function readInfraredSensor(pinir: DigitalPin): boolean {
+        let a: number = pins.digitalReadPin(pinir);
+        if (a == 0) {
+            return true;
+        } else return false;
     }
 
     /**
