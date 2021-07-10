@@ -209,16 +209,19 @@ namespace YFE06 {
     }
 
     /**
-     * Read the Collision Switch.
+     * Checks whether the Collision Switch is currently pressed.
      * @param pincs collision Switch pin. eg: DigitalPin.P8
      * @returns the Collision Switch Value.
      */
     //% weight=60
     //% blockId=YFE06_readCollisionSwitch
-    //% block="Read Collision Switch on %pincs"
+    //% block="Collision Switch at %pincs is pressed"
     //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4 
-    export function readCollisionSwitch(pincs: DigitalPin): number {
-        return pins.digitalReadPin(pincs)
+    export function readCollisionSwitch(pincs: DigitalPin): boolean {
+        let a: number = pins.digitalReadPin(pincs);
+        if (a == 0) {
+            return true;
+        } else return false;
     }
     
     /**

@@ -2,9 +2,7 @@
  YFROBOT's Building block electronic learning Starter Kit: YFE05,YFE06. 
  MotorBit extension for makecode.
 
-Support Motorbit, digital tube display module, ultrasonic module, collision switch, cruise sensor, and rocker module. 
-
-支持 MotorBit、数码管显示模块、超声波模块、碰撞开关、巡线传感器、摇杆模块。
+支持 MotorBit、碰撞开关、红外感应器、红外遥控接收模块。
 
 [MotorBit is an easy-to-use motor drive expansion board for MicroBit](http://www.yfrobot.com.cn/wiki/index.php?title=Motor:Bit)
 
